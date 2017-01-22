@@ -13,6 +13,5 @@ namespace MazeGenerator
 
         // To this vertex.
         public int To { get; set; }
-
     }
 }

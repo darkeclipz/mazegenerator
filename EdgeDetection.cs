@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MazeApp
 {
     // :-)
-    public class EdgeDetection
+    internal class EdgeDetection
     {
         private int[,] kernelHorizontal_3x3 = new int[3, 3] { { -1, -1, -1 },
                                                               {  1,  1,  1 },

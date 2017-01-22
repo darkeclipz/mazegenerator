@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MazeApp
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         // The maze object.
         private Maze _maze { get; set; }
@@ -32,7 +32,7 @@ namespace MazeApp
         // Speed of redrawing.
         private RedrawSpeed _speed { get; set; } = RedrawSpeed.Slow;
 
-        public Form1()
+        public Form()
         {
             InitializeComponent();
             toolStripStatusLabel1.Text = "...";

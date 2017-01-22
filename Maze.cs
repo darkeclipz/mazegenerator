@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MazeApp
 {
-    public class Maze
+    internal class Maze
     {
         // Width of the maze.
         public int Width { get; }
@@ -24,12 +24,11 @@ namespace MazeApp
         #region Events
         public delegate void Change();
         public Change OnChange;
-
         public delegate void Completed();
         public Completed OnCompleted;
         #endregion
 
-        // Lock for multithreaded genering & drawing.
+        // Lock for multi-threaded generating & drawing.
         private object _lock = false;
 
         // Initialize a maze with all the walls.

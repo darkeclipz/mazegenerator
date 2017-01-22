@@ -109,7 +109,7 @@ namespace MazeApp
                 }
             }
 
-            // Notify the maze is completed.
+            // Notify that the maze is completed.
             InvokeOnCompleted();
         }
 
